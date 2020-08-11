@@ -2,34 +2,49 @@
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
 
-console.log("hello cruel world");
-
+let votingAge=19;
+if (votingAge>18){
+    console.log("true");
+}
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
+let order = 'cold';
 
+if (order === 'hot'){
+console.log('order coffee');
+}
+else if(order === 'cold'){
+console.log('order beer');
+}
 
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
 
-
-
+let year = "1999";
+Number(year);
+console.log(year)
 
 //Task d: Write a function to multiply a*b 
 
 
+//let arrowFunction = (a, b) => a*b;
 
+//console.log(arrowFunction(8,9));
 
 
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
+let age = 31;
+let dogYear = 7;
 
+let arrowFunction = (age, dogYear) => age*dogYear;
 
-
+console.log(arrowFunction(age,dogYear));
 
 /************************************************************** Task 3 **************************************************************/
 //Dog feeder 
