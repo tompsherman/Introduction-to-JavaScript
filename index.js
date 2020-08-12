@@ -94,9 +94,44 @@ feeder(1, 15)
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-let choice="rock";
-function compChoice() 
+let compChoice = Math.random();
+    let myChoice = "paper";
 
+if(compChoice>=0 && compChoice<=.333){
+    console.log("computer throws rock")
+}else if(compChoice>=.334 && compChoice<=.666){
+    console.log("computer throws paper")
+}else if(compChoice>=.667 && compChoice<=1){
+    console.log("computer throws scissors")
+}
+
+if(myChoice === "rock" || myChoice === "paper" || myChoice === "scissors"){
+    console.log("you threw " + myChoice)
+}
+
+function shoot(myChoice, compChoice){
+    if(myChoice === "rock" && compChoice === "computer throws rock"){
+        console.log("draw")
+    }else if(myChoice === "paper" && compChoice === "computer throws paper"){
+        console.log("draw")
+    }else if(myChoice === "scissors" && compChoice === "computer throws scissors"){
+        console.log("draw")
+    }else if(myChoice === "rock" && compChoice === "computer throws paper"){
+        console.log("you lose (computer wins)")
+    }else if(myChoice === "rock" && compChoice === "computer throws scissors"){
+        console.log("you win (computer loses)")
+    }else if(myChoice === "paper" && compChoice === "computer throws scissors"){
+        console.log("you lose (computer wins)")
+    }else if(myChoice === "paper" && compChoice === "computer throws rock"){
+        console.log("you win (computer loses)")
+    }else if(myChoice === "scissors" && compChoice === "computer throws rock"){
+        console.log("you lose (computer wins)")
+    }else if(myChoice === "scissors" && compChoice === "computer throws paper"){
+        console.log("you win (computer loses)")
+    }  
+}
+
+shoot(myChoice, compChoice)
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
@@ -115,14 +150,14 @@ console.log (feet*30.48);
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
-let bottles = 99
+// let bottles = 99
 
-function annoyingSong(bottles){
-    for(let i = bottles; i >= 0; i--){
-     console.log( i + " bottles of soda on the wall " + i + " bottles of soda, take one down pass it around " + (i-1) + " bottles of soda on the wall");
-}
-}
-annoyingSong(bottles)
+// function annoyingSong(bottles){
+//     for(let i = bottles; i >= 0; i--){
+//      console.log( i + " bottles of soda on the wall " + i + " bottles of soda, take one down pass it around " + (i-1) + " bottles of soda on the wall");
+// }
+// }
+// annoyingSong(bottles)
 
 
 /************************************************************** Task 7 **************************************************************/
@@ -134,25 +169,25 @@ annoyingSong(bottles)
 //60s should be D 
 //and anything below 60 should be F
   
-function mark(grade){
-   if(grade >=90 && grade <=100){
-       console.log("A");
-   }else if(grade <=89 && grade >=80){
-      console.log("B");
-   }else if(grade <=79 && grade >=70){
-       console.log("C");
-   }else if(grade <=69 && grade >= 60){
-       console.log("D");
-   }else if(grade <=59)
-       console.log("F")
-   }
+// function mark(grade){
+//    if(grade >=90 && grade <=100){
+//        console.log("A");
+//    }else if(grade <=89 && grade >=80){
+//       console.log("B");
+//    }else if(grade <=79 && grade >=70){
+//        console.log("C");
+//    }else if(grade <=69 && grade >= 60){
+//        console.log("D");
+//    }else if(grade <=59)
+//        console.log("F")
+//    }
 
 
-mark(55);
-mark(82);
-mark(66);
-mark(95);
-mark(77);
+// mark(55);
+// mark(82);
+// mark(66);
+// mark(95);
+// mark(77);
 
   
   
