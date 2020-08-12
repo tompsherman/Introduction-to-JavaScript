@@ -94,44 +94,47 @@ feeder(1, 15)
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
+
+
+
+
+    
+        
 let compChoice = Math.random();
     let myChoice = "paper";
 
-if(compChoice>=0 && compChoice<=.333){
-    console.log("computer throws rock")
-}else if(compChoice>=.334 && compChoice<=.666){
-    console.log("computer throws paper")
-}else if(compChoice>=.667 && compChoice<=1){
-    console.log("computer throws scissors")
-}
+    if(compChoice>=0 && compChoice<=.333){
+        console.log("computer throws rock")
+    }else if(compChoice>=.334 && compChoice<=.666){
+        console.log("computer throws paper")
+    }else if(compChoice>=.667 && compChoice<=1){
+        console.log = "computer throws scissors"
+    }
 
 if(myChoice === "rock" || myChoice === "paper" || myChoice === "scissors"){
-    console.log("you threw " + myChoice)
+console.log("you threw " + myChoice)
 }
 
-function shoot(myChoice, compChoice){
-    if(myChoice === "rock" && compChoice === "computer throws rock"){
+    if(myChoice === "rock" && compChoice>=0 && compChoice<=.333){
         console.log("draw")
-    }else if(myChoice === "paper" && compChoice === "computer throws paper"){
+    }else if(myChoice === "paper" && compChoice>=.334 && compChoice<=.666){
         console.log("draw")
-    }else if(myChoice === "scissors" && compChoice === "computer throws scissors"){
+    }else if(myChoice === "scissors" && compChoice>=.667 && compChoice<=1){
         console.log("draw")
-    }else if(myChoice === "rock" && compChoice === "computer throws paper"){
+    }else if(myChoice === "rock" && compChoice>=.334 && compChoice<=.666){
         console.log("you lose (computer wins)")
-    }else if(myChoice === "rock" && compChoice === "computer throws scissors"){
+    }else if(myChoice === "rock" && compChoice>=.667 && compChoice<=1){
         console.log("you win (computer loses)")
-    }else if(myChoice === "paper" && compChoice === "computer throws scissors"){
+    }else if(myChoice === "paper" && compChoice>=.667 && compChoice<=1){
         console.log("you lose (computer wins)")
-    }else if(myChoice === "paper" && compChoice === "computer throws rock"){
+    }else if(myChoice === "paper" && compChoice>=0 && compChoice<=.333){
         console.log("you win (computer loses)")
-    }else if(myChoice === "scissors" && compChoice === "computer throws rock"){
+    }else if(myChoice === "scissors" && compChoice>=0 && compChoice<=.333){
         console.log("you lose (computer wins)")
-    }else if(myChoice === "scissors" && compChoice === "computer throws paper"){
+    }else if(myChoice === "scissors" && compChoice>=.334 && compChoice<=.666){
         console.log("you win (computer loses)")
     }  
-}
 
-shoot(myChoice, compChoice)
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
